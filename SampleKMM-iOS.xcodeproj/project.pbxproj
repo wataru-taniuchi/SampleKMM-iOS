@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E72A106529F9266300EEAC44 /* CombineAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72A106429F9266200EEAC44 /* CombineAdapter.swift */; };
+		E72A106A29F926E900EEAC44 /* shared in Frameworks */ = {isa = PBXBuildFile; productRef = E72A106929F926E900EEAC44 /* shared */; };
+		E7395F2229F92795000625A5 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7395F2129F92794000625A5 /* WeatherViewModel.swift */; };
+		E7395F2429F92797000625A5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7395F2329F92797000625A5 /* HomeView.swift */; };
+		E7395F2729F92910000625A5 /* Prefecture+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7395F2629F92910000625A5 /* Prefecture+.swift */; };
 		E78E438429F925B80070F24E /* SampleKMM_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78E438329F925B80070F24E /* SampleKMM_iOSApp.swift */; };
-		E78E438629F925B80070F24E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78E438529F925B80070F24E /* ContentView.swift */; };
 		E78E438829F925BB0070F24E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78E438729F925BB0070F24E /* Assets.xcassets */; };
 		E78E438B29F925BB0070F24E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E78E438A29F925BB0070F24E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E72A106429F9266200EEAC44 /* CombineAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineAdapter.swift; sourceTree = "<group>"; };
+		E72A106729F926C200EEAC44 /* swiftPM */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = swiftPM; path = "../Cainzワークスペース/samplekmmlibrary/shared/swiftPM"; sourceTree = "<group>"; };
+		E7395F2129F92794000625A5 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		E7395F2329F92797000625A5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E7395F2629F92910000625A5 /* Prefecture+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Prefecture+.swift"; sourceTree = "<group>"; };
 		E78E438029F925B80070F24E /* SampleKMM-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SampleKMM-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78E438329F925B80070F24E /* SampleKMM_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleKMM_iOSApp.swift; sourceTree = "<group>"; };
-		E78E438529F925B80070F24E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E78E438729F925BB0070F24E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E78E438A29F925BB0070F24E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,17 +34,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72A106A29F926E900EEAC44 /* shared in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E72A106629F926C200EEAC44 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				E72A106729F926C200EEAC44 /* swiftPM */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		E72A106829F926E900EEAC44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7395F2529F928FF000625A5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7395F2629F92910000625A5 /* Prefecture+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E7395F2829F92925000625A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7395F2329F92797000625A5 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7395F2929F9292D000625A5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7395F2129F92794000625A5 /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		E78E437729F925B80070F24E = {
 			isa = PBXGroup;
 			children = (
+				E72A106629F926C200EEAC44 /* Packages */,
 				E78E438229F925B80070F24E /* SampleKMM-iOS */,
 				E78E438129F925B80070F24E /* Products */,
+				E72A106829F926E900EEAC44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +101,11 @@
 		E78E438229F925B80070F24E /* SampleKMM-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E7395F2929F9292D000625A5 /* ViewModel */,
+				E7395F2829F92925000625A5 /* View */,
+				E7395F2529F928FF000625A5 /* Extensions */,
+				E72A106429F9266200EEAC44 /* CombineAdapter.swift */,
 				E78E438329F925B80070F24E /* SampleKMM_iOSApp.swift */,
-				E78E438529F925B80070F24E /* ContentView.swift */,
 				E78E438729F925BB0070F24E /* Assets.xcassets */,
 				E78E438929F925BB0070F24E /* Preview Content */,
 			);
@@ -83,6 +136,9 @@
 			dependencies = (
 			);
 			name = "SampleKMM-iOS";
+			packageProductDependencies = (
+				E72A106929F926E900EEAC44 /* shared */,
+			);
 			productName = "SampleKMM-iOS";
 			productReference = E78E438029F925B80070F24E /* SampleKMM-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -137,8 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E78E438629F925B80070F24E /* ContentView.swift in Sources */,
+				E7395F2429F92797000625A5 /* HomeView.swift in Sources */,
+				E7395F2729F92910000625A5 /* Prefecture+.swift in Sources */,
+				E7395F2229F92795000625A5 /* WeatherViewModel.swift in Sources */,
 				E78E438429F925B80070F24E /* SampleKMM_iOSApp.swift in Sources */,
+				E72A106529F9266300EEAC44 /* CombineAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +323,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SampleKMM-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = C99Q5WUJ4K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -281,6 +343,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wataru-taniuchi.SampleKMM-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Free;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -292,9 +356,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SampleKMM-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = C99Q5WUJ4K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -309,6 +376,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wataru-taniuchi.SampleKMM-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Free;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,6 +406,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E72A106929F926E900EEAC44 /* shared */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = shared;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E78E437829F925B80070F24E /* Project object */;
 }
